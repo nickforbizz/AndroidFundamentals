@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/miSettings"
+        android:title="Settings"
+        android:icon="@mipmap/ic_settings"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/miNotification"
+        android:title="notification"
+        android:icon="@mipmap/ic_notifications"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/miToast"
+        android:title="Toast"/>
+
+    <item android:id="@+id/miAlertdialog"
+        android:title="Alert Dialog"/>
+</menu>
