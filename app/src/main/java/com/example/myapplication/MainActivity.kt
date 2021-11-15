@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
             R.id.miToast -> Intent(this, ToastActivity::class.java).also {
                 startActivity(it)
             }
+            R.id.miAlertdialog -> Intent(this, AlertdialogsActivity::class.java).also {
+                startActivity(it)
+            }
+            R.id.miSpinners -> Intent(this, AlertdialogsActivity::class.java).also {
+                startActivity(it)
+            }
         }
         return true
     }

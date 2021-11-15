@@ -16,4 +16,7 @@
 
     <item android:id="@+id/miAlertdialog"
         android:title="Alert Dialog"/>
+
+    <item android:id="@+id/miSpinners"
+        android:title="Spinners"/>
 </menu>
