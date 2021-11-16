@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             R.id.miAlertdialog -> Intent(this, AlertdialogsActivity::class.java).also {
                 startActivity(it)
             }
-            R.id.miSpinners -> Intent(this, AlertdialogsActivity::class.java).also {
+            R.id.miSpinners -> Intent(this, SpinnerActivity::class.java).also {
                 startActivity(it)
             }
         }
