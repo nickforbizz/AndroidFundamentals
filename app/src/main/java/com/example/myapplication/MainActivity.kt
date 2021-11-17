@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.RadioButton
 import android.widget.Toast
+import androidx.fragment.app.FragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -49,6 +50,9 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
             R.id.miSpinners -> Intent(this, SpinnerActivity::class.java).also {
+                startActivity(it)
+            }
+            R.id.miFragments -> Intent(this, FlagmentActivity::class.java).also {
                 startActivity(it)
             }
         }
