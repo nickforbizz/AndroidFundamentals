@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
             R.id.miFragments -> Intent(this, FlagmentActivity::class.java).also {
                 startActivity(it)
             }
+            R.id.miBottomNav -> Intent(this, BottomNavActivity::class.java).also {
+                startActivity(it)
+            }
         }
         return true
     }

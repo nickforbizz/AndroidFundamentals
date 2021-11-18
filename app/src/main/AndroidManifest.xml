@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".FlagmentActivity"/>
+        <activity
+            android:name=".BottomNavActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_nav"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity android:name=".FlagmentActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".AlertdialogsActivity" />
         <activity android:name=".ToastActivity" />

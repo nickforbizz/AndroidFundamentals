@@ -22,4 +22,7 @@
 
     <item android:id="@+id/miFragments"
         android:title="Fragments"/>
+
+    <item android:id="@+id/miBottomNav"
+        android:title="Bottom Nav"/>
 </menu>
