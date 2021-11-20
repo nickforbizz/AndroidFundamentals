@@ -58,6 +58,10 @@ class MainActivity : AppCompatActivity() {
             R.id.miBottomNav -> Intent(this, BottomNavActivity::class.java).also {
                 startActivity(it)
             }
+
+            R.id.miViewPager -> Intent(this, ViewPagerActivity::class.java).also {
+                startActivity(it)
+            }
         }
         return true
     }
