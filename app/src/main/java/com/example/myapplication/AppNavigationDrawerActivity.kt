@@ -22,6 +22,8 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
+
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.miSettings -> Toast.makeText(this, "settings clicked", Toast.LENGTH_LONG).show()
@@ -40,13 +42,15 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
                 R.id.miBottomNav -> Intent(this, BottomNavActivity::class.java).also {
                     startActivity(it)
                 }
-
                 R.id.miViewPager -> Intent(this, ViewPagerActivity::class.java).also {
                     startActivity(it)
                 }
             }
             true
         }
+
+
+
     }
 
 

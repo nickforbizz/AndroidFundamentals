@@ -25,6 +25,10 @@
 
     <item android:id="@+id/miBottomNav"
         android:title="Bottom Nav"/>
+
+    <item android:id="@+id/miSlidableMenu"
+        android:title="Slidable Menu"/>
+
     <item android:id="@+id/miViewPager"
         android:title="View Pager"/>
 </menu>
