@@ -58,8 +58,10 @@ class MainActivity : AppCompatActivity() {
             R.id.miBottomNav -> Intent(this, BottomNavActivity::class.java).also {
                 startActivity(it)
             }
-
-            R.id.miViewPager -> Intent(this, ViewPagerActivity::class.java).also {
+            R.id.miSlidableMenu -> Intent(this, AppNavigationDrawerActivity::class.java).also {
+                startActivity(it)
+            }
+            R.id.miViewPager -> Intent(this, AppNavigationDrawerActivity::class.java).also {
                 startActivity(it)
             }
         }
