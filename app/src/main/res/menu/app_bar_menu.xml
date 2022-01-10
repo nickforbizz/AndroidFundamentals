@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/miSettings"
-        android:title="Settings"
+    <item
+        android:id="@+id/miSettings"
         android:icon="@mipmap/ic_settings"
-        app:showAsAction="ifRoom"/>
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/miNotification"
-        android:title="notification"
+    <item
+        android:id="@+id/miNotification"
         android:icon="@mipmap/ic_notifications"
-        app:showAsAction="ifRoom"/>
+        android:title="notification"
+        app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/miToast"
-        android:title="Toast"/>
+    <item
+        android:id="@+id/miToast"
+        android:title="Toast" />
 
-    <item android:id="@+id/miAlertdialog"
-        android:title="Alert Dialog"/>
+    <item
+        android:id="@+id/miAlertdialog"
+        android:title="Alert Dialog" />
 
-    <item android:id="@+id/miSpinners"
-        android:title="Spinners"/>
+    <item
+        android:id="@+id/miSpinners"
+        android:title="Spinners" />
 
-    <item android:id="@+id/miFragments"
-        android:title="Fragments"/>
+    <item
+        android:id="@+id/miFragments"
+        android:title="Fragments" />
 
-    <item android:id="@+id/miBottomNav"
-        android:title="Bottom Nav"/>
+    <item
+        android:id="@+id/miBottomNav"
+        android:title="Bottom Nav" />
 
-    <item android:id="@+id/miSlidableMenu"
-        android:title="Slidable Menu"/>
+    <item
+        android:id="@+id/miSlidableMenu"
+        android:title="Slidable Menu" />
 
-    <item android:id="@+id/miViewPager"
-        android:title="View Pager"/>
+    <item
+        android:id="@+id/miViewPager"
+        android:title="View Pager" />
+    <item
+        android:id="@+id/miSharepref"
+        android:title="Shared Preferences" />
 </menu>

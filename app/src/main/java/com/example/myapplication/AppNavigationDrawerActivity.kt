@@ -45,6 +45,9 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
                 R.id.miViewPager -> Intent(this, ViewPagerActivity::class.java).also {
                     startActivity(it)
                 }
+                R.id.miSharepref -> Intent(this, SharedPreferencesActivity::class.java).also {
+                    startActivity(it)
+                }
             }
             true
         }

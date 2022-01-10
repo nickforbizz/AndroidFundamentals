@@ -30,13 +30,8 @@
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".AlertdialogsActivity" />
         <activity android:name=".ToastActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".SharedPreferencesActivity" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
