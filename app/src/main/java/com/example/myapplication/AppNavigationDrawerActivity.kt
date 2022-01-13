@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -11,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_app_navigation_drawer.*
 class AppNavigationDrawerActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
+    lateinit var receiver: AirplaneBroadcastReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +23,14 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+
+        // Broadcast Events
+        receiver = AirplaneBroadcastReceiver()
+        IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED).also {
+            registerReceiver(receiver, it)
+        }
 
         // start and stop intent service
 //        btnStartService.setOnClickListener{
@@ -97,5 +107,10 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
             return  true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterReceiver(receiver);
     }
 }
