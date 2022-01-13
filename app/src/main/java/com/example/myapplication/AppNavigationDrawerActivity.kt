@@ -22,6 +22,38 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        // start and stop intent service
+//        btnStartService.setOnClickListener{
+//            Intent(this, myIntentService::class.java).also {
+//                startService(it)
+//                txtServiceMsg.text = "Service Started"
+//            }
+//        }
+
+        btnStartService.setOnClickListener{
+            Intent(this, MyService::class.java).also {
+                startService(it)
+                txtServiceMsg.text = "Service Started"
+            }
+        }
+
+        btnStopService.setOnClickListener{
+            Intent(this, MyService::class.java).also {
+                stopService(it)
+                txtServiceMsg.text = "Service Stopped"
+            }
+        }
+
+        btnSendData.setOnClickListener{
+            Intent(this, MyService::class.java).also {
+                val data_stream = etDataString.text.toString()
+                it.putExtra("EXTRA_DATA", data_stream)
+                txtServiceMsg.text = "Service Stopped"
+                startService(it)
+            }
+        }
+
+
 
 
         navView.setNavigationItemSelectedListener {
@@ -46,6 +78,9 @@ class AppNavigationDrawerActivity : AppCompatActivity() {
                     startActivity(it)
                 }
                 R.id.miSharepref -> Intent(this, SharedPreferencesActivity::class.java).also {
+                    startActivity(it)
+                }
+                R.id.miNotification -> Intent(this, NotificationActivity::class.java).also {
                     startActivity(it)
                 }
             }

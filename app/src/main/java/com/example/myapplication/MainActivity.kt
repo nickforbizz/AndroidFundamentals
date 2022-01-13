@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
 
             val resOrder = "You have orderd a bugger with;\n" +
                     "${meat.text}" +
-                    (if(beef) "\nBeef" else "") +
-                    (if(cheese) "\ncheese" else "") +
-                    (if(onions) "\nonions" else "")
+                    (if (beef) "\nBeef" else "") +
+                    (if (cheese) "\ncheese" else "") +
+                    (if (onions) "\nonions" else "")
 
-            tvRes.text  = resOrder
+            tvRes.text = resOrder
         }
     }
 
@@ -41,29 +41,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        when(item.itemId){
+        when (item.itemId) {
             R.id.miSettings -> Toast.makeText(this, "settings clicked", Toast.LENGTH_LONG).show()
-            R.id.miToast -> Intent(this, ToastActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miAlertdialog -> Intent(this, AlertdialogsActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miSpinners -> Intent(this, SpinnerActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miFragments -> Intent(this, FlagmentActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miBottomNav -> Intent(this, BottomNavActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miSlidableMenu -> Intent(this, AppNavigationDrawerActivity::class.java).also {
-                startActivity(it)
-            }
-            R.id.miViewPager -> Intent(this, AppNavigationDrawerActivity::class.java).also {
-                startActivity(it)
-            }
+
+
         }
         return true
     }

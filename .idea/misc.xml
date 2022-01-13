@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_app_navigation_drawer.xml" value="0.15" />
+        <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_app_navigation_drawer.xml" value="0.264" />
         <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_bottom_nav.xml" value="0.2046875" />
         <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_flagment.xml" value="0.146875" />
+        <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_intentservice.xml" value="0.21467391304347827" />
+        <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_notifications.xml" value="0.21467391304347827" />
         <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_shared_preferences.xml" value="0.264" />
         <entry key="..\:/Android/TutApp/app/src/main/res/layout/activity_view_pager.xml" value="0.264" />
         <entry key="..\:/Android/TutApp/app/src/main/res/layout/custom_toast.xml" value="0.146875" />
